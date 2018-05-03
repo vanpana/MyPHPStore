@@ -4,9 +4,9 @@
 
 <?php
 require("Util/Database.php");
+require("Repository/Repository.php");
 
-$connection = Database::getConnection();
-echo '<p>'.$connection.'</p>';
+Repository::getAllProducts()
 ?>
 </body>
 </html>

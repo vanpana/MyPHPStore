@@ -6,18 +6,17 @@ class Database
     const DB_NAME = 'store_db';
     const DB_USER = 'dbadmin';
     const DB_PASS = 'dbadmin';
-    private static $db;
+    private static $connection;
 
     public static function getConnection()
     {
         // If connection wasn't initialized, do it here
-        if (static::$db == null) {
-            $dsn = 'mysql:host=' . static::DB_HOST . ';dbname=' . static::DB_NAME . ';charset=utf8';
-            static::$db = new PDO($dsn, static::DB_USER, static::DB_PASS);
+        if (static::$connection == null) {
+            static::$connection = new mysqli(static::DB_HOST, static::DB_USER, static::DB_PASS, static::DB_NAME);
 
-            if (static::$db == null) die("Couldn't connect to the database");
+            if (static::$connection == null) die("Couldn't connect to the database");
         }
 
-        return static::$db;
+        return static::$connection;
     }
 }
