@@ -7,6 +7,8 @@ class Repository
 {
     public static function getAllProducts()
     {
+        $products = array();
+
         $query = 'SELECT * FROM Products';
         $connection = Database::getConnection();
 
@@ -14,8 +16,11 @@ class Repository
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo "id: " . $row["id"] . " - Name: " . $row["name"] . " " . $row["description"] . "<br>";
+                array_push($products, new Product($row["id"], $row["name"], $row["category"], $row["price"],
+                    $row["description"], $row["image"]));
             }
-        } else echo "No results";
+        }
+
+        return $products;
     }
 }
