@@ -6,10 +6,10 @@
 
 <body>
 <?php
-require("Util/Database.php");
-require("Repository/Repository.php");
-require("Domain/Product.php");
-require("Templates/Drawer.php");
+//require("Util/Database.php");
+include_once("Repository/Repository.php");
+include_once("Domain/Product.php");
+include_once("Templates/Drawer.php");
 
 $products = Repository::getAllProducts();
 
@@ -18,6 +18,8 @@ for ($index = 0; $index < count($products) - 1; $index = $index + 2) {
     $product2 = $products[$index + 1];
     echo Drawer::getDoubleItemsFilledTemplate($product1, $product2);
 }
+
+
 
 
 //foreach (Repository::getAllProducts() as $product) {

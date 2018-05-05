@@ -1,6 +1,7 @@
 <?php /** @noinspection PhpUndefinedMethodInspection */
 
-//require("../Util/Database.php");
+if ((@include_once("../Util/Database.php")) === false) include_once("Util/Database.php");
+if ((@include_once("../Domain/Product.php")) === false) include_once("Domain/Product.php");
 
 
 class Repository
