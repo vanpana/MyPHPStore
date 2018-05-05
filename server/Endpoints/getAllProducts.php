@@ -1,10 +1,9 @@
-<?php
+<?php /** @noinspection PhpIncludeInspection */
 
-try {
-    include("../Repository/Repository.php");
-} catch (Exception $exception) {
-    include("Repository/Repository.php");
-}
+$up = "../";
+$repository_path = "Repository/Repository.php";
+
+if ((@include_once($up . $repository_path)) === false) include_once($repository_path);
 
 $products = Repository::getAllProducts();
 echo json_encode($products);

@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a51bb136-bd29-443d-bc40-65fd28d3b87d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/Requests/getProducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/Endpoints/getAllProducts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyPHPStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StoreServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/Domain/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Repository/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/Repository/Repository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/Drawer.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/Templates/Drawer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/item/double_items.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/Templates/item/double_items.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/item/double_items_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/Templates/item/double_items_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/item/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/Templates/item/item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Templates/item/item_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/Templates/item/item_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Util/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/Util/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Endpoints/getAllProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/Endpoints/getAllProducts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Repository/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/Repository/Repository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,26 +26,26 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="165">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getAllProducts.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getAllProducts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/Endpoints/getAllProducts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Repository.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Repository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/Repository/Repository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+              <caret line="3" selection-start-line="3" selection-end-line="8" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -138,8 +124,8 @@
         <option value="$PROJECT_DIR$/client/index.php" />
         <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
         <option value="$PROJECT_DIR$/server/index.php" />
-        <option value="$PROJECT_DIR$/server/Endpoints/getAllProducts.php" />
         <option value="$PROJECT_DIR$/server/Repository/Repository.php" />
+        <option value="$PROJECT_DIR$/server/Endpoints/getAllProducts.php" />
       </list>
     </option>
   </component>
@@ -260,7 +246,7 @@
       <updated>1525289066560</updated>
       <workItem from="1525289072911" duration="4025000" />
       <workItem from="1525344824707" duration="2293000" />
-      <workItem from="1525511385098" duration="9807000" />
+      <workItem from="1525511385098" duration="10044000" />
     </task>
     <servers />
   </component>
@@ -282,7 +268,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16125000" />
+    <option name="totallyTimeSpent" value="16362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -293,9 +279,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32976654" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32976654" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32976654" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32976654" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32976654" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -439,13 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -455,22 +434,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="165">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/Endpoints/getAllProducts.php">
+    <entry file="file://$PROJECT_DIR$/client/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/Repository/Repository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+          <caret line="3" selection-start-line="3" selection-end-line="8" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Endpoints/getAllProducts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
         </state>
       </provider>
     </entry>

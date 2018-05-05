@@ -1,7 +1,12 @@
-<?php /** @noinspection PhpUndefinedMethodInspection */
+<?php /** @noinspection ALL */
+/** @noinspection PhpUndefinedMethodInspection */
 
-if ((@include_once("../Util/Database.php")) === false) include_once("Util/Database.php");
-if ((@include_once("../Domain/Product.php")) === false) include_once("Domain/Product.php");
+$up = "../";
+$database_path = "Util/Database.php";
+$product_path = "Domain/Product.php";
+
+if ((@include_once($up . $database_path)) === false) include_once($database_path);
+if ((@include_once($up . $product_path)) === false) include_once($product_path);
 
 
 class Repository
