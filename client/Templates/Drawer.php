@@ -45,9 +45,23 @@ class Drawer {
         return $template;
     }
 
+    public static function getCartFilledTemplate($id, $title, $price) {
+        // Get the template
+        $template = file_get_contents(realpath(dirname(__FILE__)."/../") . "/Templates/item/cart_item.html");
+
+        // Place ID
+        $template = str_replace("{{id}}", $id, $template);
+
+        // Place Title
+        $template = str_replace("{{title}}", $title, $template);
+
+        // Place price
+        $template = str_replace("{{price}}", '$' . $price, $template);
+
+        return $template;
+    }
+
     public static function drawDoubleItemsFilledTemplate($productsJSON) {
         $products = json_decode($productsJSON);
-
-
     }
 }

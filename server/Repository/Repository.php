@@ -29,4 +29,24 @@ class Repository
 
         return $products;
     }
+
+    public static function getProduct($id)
+    {
+        $product;
+
+        $query = 'SELECT * FROM Products WHERE ID = ' . $id;
+        $connection = Database::getConnection();
+
+        $result = $connection->query($query);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                $product =  new Product($row["id"], $row["name"], $row["category"], $row["price"],
+                    $row["description"], $row["image"]);
+                break;
+            }
+        }
+
+        return $product;
+    }
 }
