@@ -1,9 +1,13 @@
-<?php
+<?php /** @noinspection PhpIncludeInspection */
+$up = "../";
+$product_path = "Domain/Product.php";
+
+if ((@include_once($up . $product_path)) === false) include_once($product_path);
 
 class Drawer {
     public static function getIconFilledTemplate($imgurl, $title, $price, $category, $description) {
         // Get the template
-        $template = file_get_contents("Templates/item/item_template.html");
+        $template = file_get_contents(realpath(dirname(__FILE__)."/../") . "/Templates/item/item_template.html");
 
         // Place image
         $template = str_replace("{{imgurl}}", $imgurl, $template);
@@ -25,7 +29,7 @@ class Drawer {
 
     public static function getDoubleItemsFilledTemplate($item1, $item2) {
         // Get the template
-        $template = file_get_contents("Templates/item/double_items_template.html");
+        $template = file_get_contents(realpath(dirname(__FILE__)."/../") . "/Templates/item/double_items_template.html");
 
         // Place first item
         $template = str_replace("{{item1}}", self::getIconFilledTemplate($item1->image, $item1->name,
@@ -36,5 +40,11 @@ class Drawer {
             $item2->price, $item2->category, $item2->description), $template);
 
         return $template;
+    }
+
+    public static function drawDoubleItemsFilledTemplate($productsJSON) {
+        $products = json_decode($productsJSON);
+
+
     }
 }

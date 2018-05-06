@@ -1,7 +1,7 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="Templates/item/item.css">
-    <link rel="stylesheet" type="text/css" href="Templates/item/double_items.css">
+    <link rel="stylesheet" type="text/css" href="../client/Templates/item/item.css">
+    <link rel="stylesheet" type="text/css" href="../client/Templates/item/double_items.css">
 </head>
 
 <body>
