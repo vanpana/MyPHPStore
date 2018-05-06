@@ -1,3 +1,6 @@
+let currentIndex = 0;
+let currentCategory = "all";
+
 window.onload = function () {
     drawProducts();
 };
@@ -22,33 +25,28 @@ function drawProducts() {
             if (status === "success") {
                 jQuery.ajax({
                     type: "POST",
-                    data: {products: data},
+                    data: {products: data, startIndex: currentIndex},
                     url: "Templates/drawDoubleProducts.php",
                     dataType: 'text',
                     success: function (data, status) {
+                        console.log(data);
+                        console.log(status);
                         if (status === "success")
                             $("#mainArea").html(data);
+                    },
+                    error: function (data, status) {
+                        console.log(data);
+                        console.log(status);
                     }
                 });
             }
         });
 }
 
-function drawProductPageByIndex(startIndex) {
-
-}
-
-function getProductByIndex(index) {
-
-}
-
 function showDropdown() {
     $.get("../server/Endpoints/getAllCategories.php",
         function (data, status) {
             if (status === "success") {
-                console.log(status);
-                console.log(data);
-
                 jQuery.ajax({
                     type: "POST",
                     data: {categories: data},
@@ -67,24 +65,70 @@ function showDropdown() {
 }
 
 function drawCategory(category) {
-    $.post("../server/Endpoints/getProductsByCategory.php", {category: category},
-        function (data, status) {
-            console.log(JSON.stringify(data));
-            if (status === "success") {
-                jQuery.ajax({
-                    type: "POST",
-                    data: {products: JSON.stringify(data) },
-                    url: "Templates/drawDoubleProducts.php",
-                    dataType: 'text',
-                    success: function (data, status) {
-                        console.log(status);
-                        console.log(data);
-                        if (status === "success")
-                            $("#mainArea").html(data);
-                    }
-                });
-            }
-        });
+    // Set current index
+    currentIndex = 0;
+    currentCategory = category;
+
+    drawCategoryPage(category)
+}
+
+function drawCategoryPage(category) {
+    if (category === "all") drawProducts();
+    else {
+        $.post("../server/Endpoints/getProductsByCategory.php", {category: category},
+            function (data, status) {
+                if (status === "success") {
+                    jQuery.ajax({
+                        type: "POST",
+                        data: {products: JSON.stringify(data), startIndex: currentIndex},
+                        url: "Templates/drawDoubleProducts.php",
+                        dataType: 'text',
+                        success: function (data, status) {
+                            if (status === "success" && data !== "") {
+                                $("#mainArea").html(data);
+                                return true;
+                            }
+                            return false
+
+                        }
+                    });
+                }
+            });
+    }
+}
+
+function nextPage() {
+    let oldIndex = currentIndex;
+    currentIndex += 4;
+
+    if (!drawCategoryPage(currentCategory)) {
+        currentIndex = oldIndex;
+        document.getElementById("nextbtn").style.visibility = "hidden";
+    }
+}
+
+function prevPage() {
+    let oldIndex = currentIndex;
+
+    if (currentIndex - 4 < 0) {
+        currentIndex = 0;
+        document.getElementById("prevbtn").style.visibility = "hidden";
+    }
+    else {
+        currentIndex -= 4;
+        if (!drawCategoryPage(currentCategory)) {
+            document.getElementById("prevbtn").style.visibility = "hidden";
+            currentIndex = oldIndex;
+        }
+    }
+
+    if (drawCategoryPage(currentCategory)) {
+        if (currentIndex - 4 < 0) {
+            currentIndex = 0;
+            document.getElementById("prevbtn").style.visibility = "hidden";
+        }
+        else currentIndex -= 4;
+    } else document.getElementById("prevbtn").style.visibility = "hidden";
 }
 
 function showCart() {
