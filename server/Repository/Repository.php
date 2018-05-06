@@ -50,6 +50,24 @@ class Repository
         return $product;
     }
 
+    public static function getProductsByCategory($category) {
+        $products = array();
+
+        $query = 'SELECT * FROM Products WHERE category = \'' . $category . '\'';
+        $connection = Database::getConnection();
+
+        $result = $connection->query($query);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                array_push($products, new Product($row["id"], $row["name"], $row["category"], $row["price"],
+                    $row["description"], $row["image"]));
+            }
+        }
+
+        return $products;
+    }
+
     public static function getAllCategories()
     {
         $categories = array();

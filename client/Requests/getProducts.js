@@ -45,17 +45,17 @@ function getProductByIndex(index) {
 function showDropdown() {
     $.get("../server/Endpoints/getAllCategories.php",
         function (data, status) {
-            console.log(status);
-            console.log(data);
             if (status === "success") {
+                console.log(status);
+                console.log(data);
+
                 jQuery.ajax({
                     type: "POST",
                     data: {categories: data},
                     url: "Templates/drawSpinner.php",
                     dataType: 'text',
                     success: function (data, status) {
-                        console.log(status);
-                        console.log(data);
+
                         if (status === "success")
                             $("#dropdownValues").html(data);
                     }
@@ -67,7 +67,24 @@ function showDropdown() {
 }
 
 function drawCategory(category) {
-    alert(category);
+    $.post("../server/Endpoints/getProductsByCategory.php", {category: category},
+        function (data, status) {
+            console.log(JSON.stringify(data));
+            if (status === "success") {
+                jQuery.ajax({
+                    type: "POST",
+                    data: {products: JSON.stringify(data) },
+                    url: "Templates/drawDoubleProducts.php",
+                    dataType: 'text',
+                    success: function (data, status) {
+                        console.log(status);
+                        console.log(data);
+                        if (status === "success")
+                            $("#mainArea").html(data);
+                    }
+                });
+            }
+        });
 }
 
 function showCart() {

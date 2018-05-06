@@ -23,7 +23,7 @@
 </div>
 
 <div class="dropdown">
-    <button onclick="showDropdown()" class="dropbtn">Dropdown</button>
+    <button onclick="showDropdown()" class="dropbtn">Select category</button>
     <div id="dropdownValues" class="dropdown-content"></div>
 </div>
 <div id="mainArea"></div>

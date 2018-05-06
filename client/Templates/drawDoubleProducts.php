@@ -13,10 +13,11 @@ $products = json_decode($_POST['products']);
 $data = "";
 
 for ($index = 0; $index < count($products) - 1; $index = $index + 2) {
-
     $product1 = $products[$index];
     $product2 = $products[$index + 1];
     $data = $data . Drawer::getDoubleItemsFilledTemplate($product1, $product2);
 }
+
+if (count($products) % 2 == 1) $data = $data . Drawer::getSingleItemFilledTemplate($products[count($products) - 1]);
 
 echo $data;

@@ -30,6 +30,11 @@ class Drawer {
         return $template;
     }
 
+    public static function getSingleItemFilledTemplate($item) {
+        return self::getIconFilledTemplate($item->id, $item->image, $item->name, $item->price, $item->category,
+            $item->description);
+    }
+
     public static function getDoubleItemsFilledTemplate($item1, $item2) {
         // Get the template
         $template = file_get_contents(realpath(dirname(__FILE__)."/../") . "/Templates/item/double_items_template.html");

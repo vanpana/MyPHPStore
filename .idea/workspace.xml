@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a51bb136-bd29-443d-bc40-65fd28d3b87d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/Templates/drawSpinner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/Endpoints/getAllCategories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/Endpoints/getProductsByCategory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/Requests/getProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/Requests/getProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Templates/Drawer.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/Templates/Drawer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/Repository/Repository.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/Repository/Repository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,118 +17,95 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="drawDoubleProducts.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" selection-start-line="1" selection-end-line="21" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="27" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="drawSpinner.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/Templates/drawSpinner.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="drawCart.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/Templates/drawCart.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" selection-start-line="4" selection-end-line="27" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getAllProducts.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/Endpoints/getAllProducts.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="8" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Repository.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/Repository/Repository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
-                  <folding>
-                    <element signature="n#getAllProducts#0;n#Repository#0;n#!!top" />
-                    <element signature="n#getProduct#0;n#Repository#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="421">
-                  <caret line="71" selection-start-line="71" selection-end-line="71" />
-                  <folding>
-                    <element signature="n#!!block;n#setCookie#0" />
-                    <element signature="n#!!block;n#getCookie#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="getAllCategories.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/Endpoints/getAllCategories.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-                  <folding>
-                    <element signature="n#!!block;n#setCookie#0" />
-                    <element signature="n#!!block;n#getCookie#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drawSpinner.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/Templates/drawSpinner.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drawCart.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/Templates/drawCart.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="27" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getProductsByCategory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/Endpoints/getProductsByCategory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="71" column="44" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+              <folding>
+                <element signature="e#88#471#0" />
+                <element signature="n#!!block;n#s#0" />
+                <element signature="n#!!block;n#setCookie#0" />
+                <element signature="n#!!block;n#getCookie#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Drawer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/Templates/Drawer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getAllCategories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/Endpoints/getAllCategories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drawDoubleProducts.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="113" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -162,21 +138,22 @@
         <option value="$PROJECT_DIR$/server/Endpoints/getAllProducts.php" />
         <option value="$PROJECT_DIR$/server/index.php" />
         <option value="$PROJECT_DIR$/server/Endpoints/getAllProductsHTML.php" />
-        <option value="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" />
         <option value="$PROJECT_DIR$/client/Templates/item/item.css" />
         <option value="$PROJECT_DIR$/client/Templates/item/item_template.html" />
         <option value="$PROJECT_DIR$/client/Templates/item/cart_item.css" />
         <option value="$PROJECT_DIR$/client/cart.php" />
-        <option value="$PROJECT_DIR$/client/Templates/Drawer.php" />
         <option value="$PROJECT_DIR$/server/Endpoints/getProductsById.php" />
         <option value="$PROJECT_DIR$/client/Templates/item/cart_item.html" />
         <option value="$PROJECT_DIR$/client/Templates/drawCart.php" />
-        <option value="$PROJECT_DIR$/server/Repository/Repository.php" />
         <option value="$PROJECT_DIR$/server/Endpoints/getAllCategories.php" />
         <option value="$PROJECT_DIR$/client/style.css" />
-        <option value="$PROJECT_DIR$/client/index.php" />
-        <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
         <option value="$PROJECT_DIR$/client/Templates/drawSpinner.php" />
+        <option value="$PROJECT_DIR$/client/index.php" />
+        <option value="$PROJECT_DIR$/server/Repository/Repository.php" />
+        <option value="$PROJECT_DIR$/server/Endpoints/getProductsByCategory.php" />
+        <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
+        <option value="$PROJECT_DIR$/client/Templates/Drawer.php" />
+        <option value="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" />
       </list>
     </option>
   </component>
@@ -302,7 +279,7 @@
       <workItem from="1525289072911" duration="4025000" />
       <workItem from="1525344824707" duration="2293000" />
       <workItem from="1525511385098" duration="12904000" />
-      <workItem from="1525595390799" duration="12005000" />
+      <workItem from="1525595390799" duration="14344000" />
     </task>
     <servers />
   </component>
@@ -324,7 +301,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31227000" />
+    <option name="totallyTimeSpent" value="33566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -360,7 +337,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -601,34 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/Endpoints/getProductsById.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/Templates/Drawer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -643,21 +592,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
+    <entry file="file://$PROJECT_DIR$/client/Templates/drawSpinner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="n#!!block;n#setCookie#0" />
-            <element signature="n#!!block;n#getCookie#0" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Endpoints/getProductsById.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/Repository/Repository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+        <state relative-caret-position="274">
+          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
           <folding>
             <element signature="n#getAllProducts#0;n#Repository#0;n#!!top" />
             <element signature="n#getProduct#0;n#Repository#0;n#!!top" />
@@ -679,10 +631,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/Templates/drawSpinner.php">
+    <entry file="file://$PROJECT_DIR$/client/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="71" column="44" selection-start-line="71" selection-start-column="44" selection-end-line="71" selection-end-column="44" />
+          <folding>
+            <element signature="e#88#471#0" />
+            <element signature="n#!!block;n#s#0" />
+            <element signature="n#!!block;n#setCookie#0" />
+            <element signature="n#!!block;n#getCookie#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Templates/Drawer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Endpoints/getProductsByCategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="113" selection-start-line="20" selection-start-column="113" selection-end-line="20" selection-end-column="113" />
         </state>
       </provider>
     </entry>
