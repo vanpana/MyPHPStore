@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a51bb136-bd29-443d-bc40-65fd28d3b87d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/client/Requests/getProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/Requests/getProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,8 +59,12 @@
           <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+                <state relative-caret-position="492">
+                  <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+                  <folding>
+                    <element signature="n#!!block;n#setCookie#0" />
+                    <element signature="n#!!block;n#getCookie#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -139,8 +141,8 @@
         <option value="$PROJECT_DIR$/client/Templates/item/item_template.html" />
         <option value="$PROJECT_DIR$/client/Templates/Drawer.php" />
         <option value="$PROJECT_DIR$/client/style.css" />
-        <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
         <option value="$PROJECT_DIR$/client/index.php" />
+        <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
       </list>
     </option>
   </component>
@@ -260,7 +262,7 @@
       <workItem from="1525289072911" duration="4025000" />
       <workItem from="1525344824707" duration="2293000" />
       <workItem from="1525511385098" duration="12904000" />
-      <workItem from="1525595390799" duration="4376000" />
+      <workItem from="1525595390799" duration="5087000" />
     </task>
     <servers />
   </component>
@@ -282,7 +284,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23598000" />
+    <option name="totallyTimeSpent" value="24309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -294,8 +296,8 @@
       <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32976654" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32976654" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32976654" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32976654" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -375,6 +377,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="66" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="69" />
+          <folding>
+            <element signature="n#!!block;n#setCookie#0" />
+            <element signature="n#!!block;n#getCookie#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -563,17 +569,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
+    <entry file="file://$PROJECT_DIR$/client/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="300">
+          <caret line="20" column="85" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.php">
+    <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+        <state relative-caret-position="492">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!block;n#setCookie#0" />
+            <element signature="n#!!block;n#getCookie#0" />
+          </folding>
         </state>
       </provider>
     </entry>
