@@ -1,8 +1,7 @@
-let currentIndex = 0;
-let currentCategory = "all";
+var currentCategory = "all";
 
 window.onload = function () {
-    drawProducts();
+    drawProducts(0);
 };
 
 window.onclick = function (event) {
@@ -19,13 +18,14 @@ window.onclick = function (event) {
     }
 };
 
-function drawProducts() {
+function drawProducts(index) {
     $.get("../server/Endpoints/getAllProducts.php",
         function (data, status) {
+
             if (status === "success") {
                 jQuery.ajax({
                     type: "POST",
-                    data: {products: data, startIndex: currentIndex},
+                    data: {products: data, startIndex: index},
                     url: "Templates/drawDoubleProducts.php",
                     dataType: 'text',
                     success: function (data, status) {
@@ -34,10 +34,6 @@ function drawProducts() {
                         if (status === "success")
                             $("#mainArea").html(data);
                     },
-                    error: function (data, status) {
-                        console.log(data);
-                        console.log(status);
-                    }
                 });
             }
         });
@@ -65,22 +61,20 @@ function showDropdown() {
 }
 
 function drawCategory(category) {
-    // Set current index
-    currentIndex = 0;
     currentCategory = category;
 
-    drawCategoryPage(category)
+    drawCategoryPage(0, category)
 }
 
-function drawCategoryPage(category) {
-    if (category === "all") drawProducts();
+function drawCategoryPage(index, category) {
+    if (category === "all") drawProducts(index);
     else {
         $.post("../server/Endpoints/getProductsByCategory.php", {category: category},
             function (data, status) {
                 if (status === "success") {
                     jQuery.ajax({
                         type: "POST",
-                        data: {products: JSON.stringify(data), startIndex: currentIndex},
+                        data: {products: JSON.stringify(data), startIndex: index},
                         url: "Templates/drawDoubleProducts.php",
                         dataType: 'text',
                         success: function (data, status) {
@@ -97,38 +91,37 @@ function drawCategoryPage(category) {
     }
 }
 
-function nextPage() {
-    let oldIndex = currentIndex;
-    currentIndex += 4;
-
-    if (!drawCategoryPage(currentCategory)) {
-        currentIndex = oldIndex;
-        document.getElementById("nextbtn").style.visibility = "hidden";
-    }
+function getCurrentPageIndex() {
+    const clickFunction = document.getElementById("nextbtn").getAttribute("onclick");
+    return parseInt(clickFunction.substring(clickFunction.indexOf("(") + 1, clickFunction.indexOf(")")));
 }
 
-function prevPage() {
-    let oldIndex = currentIndex;
+function setCurrentPageIndex(index) {
+    document.getElementById("nextbtn").setAttribute("onclick", "nextPage(" + index + ")");
+    document.getElementById("prevbtn").setAttribute("onclick", "prevPage(" + index + ")");
+}
 
-    if (currentIndex - 4 < 0) {
-        currentIndex = 0;
+function nextPage(index) {
+    let currentIndex = index + 4;
+
+    if (!drawCategoryPage(currentIndex, currentCategory)) {
+        document.getElementById("nextbtn").style.visibility = "hidden";
+    } else setCurrentPageIndex(currentIndex);
+}
+
+function prevPage(index) {
+    var currentIndex;
+    if (index - 4 < 0) {
+        setCurrentPageIndex(0);
         document.getElementById("prevbtn").style.visibility = "hidden";
     }
     else {
-        currentIndex -= 4;
-        if (!drawCategoryPage(currentCategory)) {
+        currentIndex = index - 4;
+        if (!drawCategoryPage(currentIndex, currentCategory)) {
             document.getElementById("prevbtn").style.visibility = "hidden";
-            currentIndex = oldIndex;
-        }
+        } else setCurrentPageIndex(currentIndex);
     }
 
-    if (drawCategoryPage(currentCategory)) {
-        if (currentIndex - 4 < 0) {
-            currentIndex = 0;
-            document.getElementById("prevbtn").style.visibility = "hidden";
-        }
-        else currentIndex -= 4;
-    } else document.getElementById("prevbtn").style.visibility = "hidden";
 }
 
 function showCart() {
