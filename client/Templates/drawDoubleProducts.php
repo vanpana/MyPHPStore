@@ -1,5 +1,5 @@
 <?php
-include_once ("Drawer.php");
+include_once("Drawer.php");
 
 // Prevent caching.
 header('Cache-Control: no-cache, must-revalidate');
@@ -16,16 +16,18 @@ else $startIndex = 0;
 $data = "";
 
 if ($startIndex >= count($products)) $data = "";
-else if ($startIndex + 4 >= count($products)) $endIndex = count($products);
-else $endIndex = $startIndex + 4;
+else {
+    if ($startIndex + 4 >= count($products)) $endIndex = count($products);
+    else $endIndex = $startIndex + 4;
 
-for ($index = $startIndex; $index < $endIndex - 1; $index = $index + 2) {
-    $product1 = $products[$index];
-    $product2 = $products[$index + 1];
-    $data = $data . Drawer::getDoubleItemsFilledTemplate($product1, $product2);
+    for ($index = $startIndex; $index < $endIndex - 1; $index = $index + 2) {
+        $product1 = $products[$index];
+        $product2 = $products[$index + 1];
+        $data = $data . Drawer::getDoubleItemsFilledTemplate($product1, $product2);
+    }
+
+    $diff = $endIndex - $startIndex;
+    if ($diff < 4 && $diff % 2 == 1) $data = $data . Drawer::getSingleItemFilledTemplate($products[$endIndex - 1]);
 }
-
-$diff = $endIndex - $startIndex;
-if ($diff < 4 && $diff % 2 == 1) $data = $data . Drawer::getSingleItemFilledTemplate($products[$endIndex - 1]);
 
 echo $data;

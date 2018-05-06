@@ -21,7 +21,6 @@ window.onclick = function (event) {
 function drawProducts(index) {
     $.get("../server/Endpoints/getAllProducts.php",
         function (data, status) {
-
             if (status === "success") {
                 jQuery.ajax({
                     type: "POST",
@@ -29,10 +28,16 @@ function drawProducts(index) {
                     url: "Templates/drawDoubleProducts.php",
                     dataType: 'text',
                     success: function (data, status) {
-                        console.log(data);
-                        console.log(status);
-                        if (status === "success")
+                        if (status === "success" && data !== "") {
                             $("#mainArea").html(data);
+                            setCurrentPageIndex(index);
+
+                            setNextButtonVisibility(true);
+                            setPrevButtonVisibility(true);
+                        } else if (data === "") {
+                            if (getCurrentPageIndex() < index) setNextButtonVisibility(false);
+                            if (getCurrentPageIndex() > index) setPrevButtonVisibility(false);
+                        }
                     },
                 });
             }
@@ -49,7 +54,6 @@ function showDropdown() {
                     url: "Templates/drawSpinner.php",
                     dataType: 'text',
                     success: function (data, status) {
-
                         if (status === "success")
                             $("#dropdownValues").html(data);
                     }
@@ -63,11 +67,11 @@ function showDropdown() {
 function drawCategory(category) {
     currentCategory = category;
 
-    drawCategoryPage(0, category)
+    return drawCategoryPage(0, category)
 }
 
 function drawCategoryPage(index, category) {
-    if (category === "all") drawProducts(index);
+    if (category === "all") return drawProducts(index);
     else {
         $.post("../server/Endpoints/getProductsByCategory.php", {category: category},
             function (data, status) {
@@ -80,10 +84,15 @@ function drawCategoryPage(index, category) {
                         success: function (data, status) {
                             if (status === "success" && data !== "") {
                                 $("#mainArea").html(data);
-                                return true;
+                                setCurrentPageIndex(index);
+
+                                setNextButtonVisibility(true);
+                                setPrevButtonVisibility(true);
+                            } else if (data === "") {
+                                if (getCurrentPageIndex() < index) setNextButtonVisibility(false);
+                                if (getCurrentPageIndex() > index) setPrevButtonVisibility(false);
                             }
                             return false
-
                         }
                     });
                 }
@@ -97,29 +106,35 @@ function getCurrentPageIndex() {
 }
 
 function setCurrentPageIndex(index) {
+    console.log(index);
     document.getElementById("nextbtn").setAttribute("onclick", "nextPage(" + index + ")");
     document.getElementById("prevbtn").setAttribute("onclick", "prevPage(" + index + ")");
 }
 
+function setNextButtonVisibility(status) {
+    if (status === true) document.getElementById("nextbtn").style.visibility = "visible";
+    else document.getElementById("nextbtn").style.visibility = "hidden";
+}
+
+function setPrevButtonVisibility(status) {
+    if (status === true) document.getElementById("prevbtn").style.visibility = "visible";
+    else document.getElementById("prevbtn").style.visibility = "hidden";
+}
+
 function nextPage(index) {
     let currentIndex = index + 4;
-
-    if (!drawCategoryPage(currentIndex, currentCategory)) {
-        document.getElementById("nextbtn").style.visibility = "hidden";
-    } else setCurrentPageIndex(currentIndex);
+    drawCategoryPage(currentIndex, currentCategory);
 }
 
 function prevPage(index) {
     var currentIndex;
     if (index - 4 < 0) {
         setCurrentPageIndex(0);
-        document.getElementById("prevbtn").style.visibility = "hidden";
+        setPrevButtonVisibility(false);
     }
     else {
         currentIndex = index - 4;
-        if (!drawCategoryPage(currentIndex, currentCategory)) {
-            document.getElementById("prevbtn").style.visibility = "hidden";
-        } else setCurrentPageIndex(currentIndex);
+        drawCategoryPage(currentIndex, currentCategory);
     }
 
 }
