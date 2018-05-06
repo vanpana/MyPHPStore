@@ -1,4 +1,8 @@
 window.onload = function () {
+    drawProducts();
+};
+
+function drawProducts() {
     $.get("../server/Endpoints/getAllProducts.php",
         function (data, status) {
             if (status === "success") {
@@ -14,4 +18,12 @@ window.onload = function () {
                 });
             }
         });
-};
+}
+
+function drawProductsByIndex(startIndex) {
+
+}
+
+function addToCart(index) {
+    alert("Bought product with id: " + index);
+}

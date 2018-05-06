@@ -26,3 +26,23 @@
 .container {
     padding: 2px 16px;
 }
+
+.btn {
+    /*float: right;*/
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1em;
+    background: #34343E;
+    border-radius: 0.125em;
+    background-clip: padding-box;
+
+    margin-right: 1em;
+
+    color:#7CBDBA;
+    text-decoration: none;
+}
+
+.btn--subtle {
+    background-image: linear-gradient(to bottom, #41414D, #3B3B47);
+    box-shadow: 0 1px 1px #33333D;
+}
