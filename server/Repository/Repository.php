@@ -41,12 +41,30 @@ class Repository
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                $product =  new Product($row["id"], $row["name"], $row["category"], $row["price"],
+                $product = new Product($row["id"], $row["name"], $row["category"], $row["price"],
                     $row["description"], $row["image"]);
                 break;
             }
         }
 
         return $product;
+    }
+
+    public static function getAllCategories()
+    {
+        $categories = array();
+
+        $query = 'SELECT * FROM Products';
+        $connection = Database::getConnection();
+
+        $result = $connection->query($query);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                array_push($categories, $row["category"]);
+            }
+        }
+
+        return $categories;
     }
 }

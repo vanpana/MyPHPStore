@@ -22,6 +22,10 @@
     <a id="cartbtn" onclick="changeActive('cartbtn')">Cart</a>
 </div>
 
+<div class="dropdown">
+    <button onclick="showDropdown()" class="dropbtn">Dropdown</button>
+    <div id="dropdownValues" class="dropdown-content"></div>
+</div>
 <div id="mainArea"></div>
 </body>
 </html>

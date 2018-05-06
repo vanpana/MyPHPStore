@@ -2,6 +2,20 @@ window.onload = function () {
     drawProducts();
 };
 
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+};
+
 function drawProducts() {
     $.get("../server/Endpoints/getAllProducts.php",
         function (data, status) {
@@ -26,6 +40,34 @@ function drawProductPageByIndex(startIndex) {
 
 function getProductByIndex(index) {
 
+}
+
+function showDropdown() {
+    $.get("../server/Endpoints/getAllCategories.php",
+        function (data, status) {
+            console.log(status);
+            console.log(data);
+            if (status === "success") {
+                jQuery.ajax({
+                    type: "POST",
+                    data: {categories: data},
+                    url: "Templates/drawSpinner.php",
+                    dataType: 'text',
+                    success: function (data, status) {
+                        console.log(status);
+                        console.log(data);
+                        if (status === "success")
+                            $("#dropdownValues").html(data);
+                    }
+                });
+            }
+        });
+
+    document.getElementById("dropdownValues").classList.toggle("show");
+}
+
+function drawCategory(category) {
+    alert(category);
 }
 
 function showCart() {
