@@ -18,12 +18,11 @@
 </head>
 <body>
 <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a id="homebtn" class="active" href="#products" onclick="changeActive('homebtn')">Home</a>
+    <a id="cartbtn" href="#cart" onclick="changeActive('cartbtn')">Cart</a>
 </div>
 
 <div id="products"></div>
+<div id="cart"></div>
 </body>
 </html>

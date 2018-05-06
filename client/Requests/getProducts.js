@@ -8,7 +8,7 @@ function drawProducts() {
             if (status === "success") {
                 jQuery.ajax({
                     type: "POST",
-                    data: { products: data},
+                    data: {products: data},
                     url: "Templates/drawDoubleProducts.php",
                     dataType: 'text',
                     success: function (data, status) {
@@ -26,4 +26,11 @@ function drawProductsByIndex(startIndex) {
 
 function addToCart(index) {
     alert("Bought product with id: " + index);
+}
+
+function changeActive(tab) {
+    document.getElementById("homebtn").classList.remove('active');
+    document.getElementById("cartbtn").classList.remove('active');
+
+    document.getElementById(tab).classList.add('active');
 }
