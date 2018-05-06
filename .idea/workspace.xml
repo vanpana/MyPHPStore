@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a51bb136-bd29-443d-bc40-65fd28d3b87d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client/Requests/getProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/Requests/getProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Templates/Drawer.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/Templates/Drawer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Templates/item/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/Templates/item/item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Templates/item/item_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/Templates/item/item_template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +40,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -57,11 +55,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -80,9 +87,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -110,11 +117,12 @@
         <option value="$PROJECT_DIR$/server/index.php" />
         <option value="$PROJECT_DIR$/server/Endpoints/getAllProductsHTML.php" />
         <option value="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" />
-        <option value="$PROJECT_DIR$/client/index.php" />
         <option value="$PROJECT_DIR$/client/Templates/item/item.css" />
         <option value="$PROJECT_DIR$/client/Templates/item/item_template.html" />
         <option value="$PROJECT_DIR$/client/Templates/Drawer.php" />
         <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
+        <option value="$PROJECT_DIR$/client/index.php" />
+        <option value="$PROJECT_DIR$/client/style.css" />
       </list>
     </option>
   </component>
@@ -154,31 +162,6 @@
               <item name="StoreServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyPHPStore" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StoreServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyPHPStore" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StoreServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyPHPStore" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StoreServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyPHPStore" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="Templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StoreServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyPHPStore" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="Templates" type="462c0819:PsiDirectoryNode" />
-              <item name="item" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StoreServer" type="b2602c69:ProjectViewProjectNode" />
@@ -259,7 +242,7 @@
       <workItem from="1525289072911" duration="4025000" />
       <workItem from="1525344824707" duration="2293000" />
       <workItem from="1525511385098" duration="12904000" />
-      <workItem from="1525595390799" duration="3814000" />
+      <workItem from="1525595390799" duration="3959000" />
     </task>
     <servers />
   </component>
@@ -281,7 +264,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23036000" />
+    <option name="totallyTimeSpent" value="23181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -522,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/Templates/item/item.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -548,13 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/Templates/Drawer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
@@ -566,6 +535,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
         </state>
       </provider>
     </entry>
