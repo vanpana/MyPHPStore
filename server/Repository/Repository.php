@@ -11,6 +11,41 @@ if ((@include_once($up . $product_path)) === false) include_once($product_path);
 
 class Repository
 {
+    public static function addProduct($name, $category, $price, $description, $image)
+    {
+        $query = "INSERT INTO Products (name, category, price, description, image) VALUES ('{$name}', '{$category}', 
+          {$price}, '{$description}', '{$image}')";
+
+        $connection = Database::getConnection();
+
+        if ($connection->query($query) === TRUE) {
+            echo "Success!";
+        } else echo "Failure!";
+    }
+
+    public static function delProduct($id)
+    {
+        $query = "DELETE FROM Products WHERE id = " . $id;
+
+        $connection = Database::getConnection();
+
+        if ($connection->query($query) === TRUE) {
+            echo "Success!";
+        } else echo "Failure!";
+    }
+
+    public static function updateProduct($id, $name, $category, $price, $description, $image)
+    {
+        $query = "UPDATE Products set name = '{$name}', category = '{$category}', price = {$price},
+          description = '{$description}', image = '{$image}' where id = {$id}";
+
+        $connection = Database::getConnection();
+
+        if ($connection->query($query) === TRUE) {
+            echo "Success!";
+        } else echo "Failure!";
+    }
+
     public static function getAllProducts()
     {
         $products = array();
@@ -50,7 +85,8 @@ class Repository
         return $product;
     }
 
-    public static function getProductsByCategory($category) {
+    public static function getProductsByCategory($category)
+    {
         $products = array();
 
         $query = 'SELECT * FROM Products WHERE category = \'' . $category . '\'';

@@ -26,6 +26,7 @@
     <button onclick="showDropdown()" class="dropbtn">Select category</button>
     <div id="dropdownValues" class="dropdown-content"></div>
 </div>
+
 <div id="mainArea"></div>
 <input id="prevbtn" type="button" value="Previous" onclick="prevPage(0)"/>
 <input id="nextbtn" type="button" value="Next" onclick="nextPage(0)"/>

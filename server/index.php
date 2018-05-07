@@ -1,32 +1,27 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="../client/Templates/item/item.css">
-    <link rel="stylesheet" type="text/css" href="../client/Templates/item/double_items.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="actions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
 </head>
 
 <body>
-<?php
-//require("Util/Database.php");
-include_once("Repository/Repository.php");
-include_once("Domain/Product.php");
-include_once("Templates/Drawer.php");
+<div class="dropdown">
+    <button onclick="showDropdown()" class="dropbtn">Dropdown</button>
+    <div id="dropdownValues" class="dropdown-content">
+        <a onclick="showPage('none')">None</a>
+        <a onclick="showPage('add')">Add</a>
+        <a onclick="showPage('update')">Update</a>
+        <a onclick="showPage('delete')">Delete</a>
+    </div>
+</div>
 
-$products = Repository::getAllProducts();
+<div id="inputArea"></div>
 
-for ($index = 0; $index < count($products) - 1; $index = $index + 2) {
-    $product1 = $products[$index];
-    $product2 = $products[$index + 1];
-    echo Drawer::getDoubleItemsFilledTemplate($product1, $product2);
-}
+<div id="mainArea">
 
-
-
-
-//foreach (Repository::getAllProducts() as $product) {
-//    echo Drawer::getIconFilledTemplate($product->image, $product->name, $product->price, $product->category,
-//        $product->description);
-//    echo "";
-//}
-?>
+</div>
 </body>
 </html>
