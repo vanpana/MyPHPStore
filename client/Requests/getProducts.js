@@ -106,7 +106,6 @@ function getCurrentPageIndex() {
 }
 
 function setCurrentPageIndex(index) {
-    console.log(index);
     document.getElementById("nextbtn").setAttribute("onclick", "nextPage(" + index + ")");
     document.getElementById("prevbtn").setAttribute("onclick", "prevPage(" + index + ")");
 }

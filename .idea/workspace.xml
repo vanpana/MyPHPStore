@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a51bb136-bd29-443d-bc40-65fd28d3b87d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/StoreServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/StoreServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/Requests/getProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/Requests/getProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +18,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.40509555">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -28,10 +30,13 @@
           <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="595">
-                  <caret line="138" selection-start-line="138" selection-end-line="138" />
+                <state relative-caret-position="2055">
+                  <caret line="137" selection-start-line="137" selection-end-line="137" />
                   <folding>
-                    <element signature="e#88#471#0" />
+                    <element signature="n#!!block;n#showCart#0" />
+                    <element signature="n#!!block;n#addToCart#0" />
+                    <element signature="n#!!block;n#deleteFromCart#0" />
+                    <element signature="n#!!block;n#changeActive#0" />
                     <element signature="n#!!block;n#setCookie#0" />
                     <element signature="n#!!block;n#getCookie#0" />
                   </folding>
@@ -42,17 +47,17 @@
           <file leaf-file-name="Drawer.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/Templates/Drawer.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="441">
+                <state relative-caret-position="510">
                   <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="drawDoubleProducts.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="drawDoubleProducts.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" selection-start-line="31" selection-end-line="31" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -60,12 +65,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="getProducts.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="477">
-                  <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+                <state relative-caret-position="15">
+                  <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
                   <folding>
                     <element signature="n#!!block;n#showCart#0" />
                     <element signature="n#!!block;n#addToCart#0" />
@@ -74,6 +79,28 @@
                     <element signature="n#!!block;n#setCookie#0" />
                     <element signature="n#!!block;n#getCookie#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Repository.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/Repository/Repository.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="190">
+                  <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+                  <folding>
+                    <element signature="n#getAllProducts#0;n#Repository#0;n#!!top" />
+                    <element signature="n#getProduct#0;n#Repository#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/Util/Database.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -95,7 +122,7 @@
     <findStrings>
       <find>eleme</find>
       <find>curre</find>
-      <find>if (data</find>
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,8 +161,8 @@
         <option value="$PROJECT_DIR$/server/Endpoints/getProductsByCategory.php" />
         <option value="$PROJECT_DIR$/client/Templates/Drawer.php" />
         <option value="$PROJECT_DIR$/client/index.php" />
-        <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
         <option value="$PROJECT_DIR$/client/Templates/drawDoubleProducts.php" />
+        <option value="$PROJECT_DIR$/client/Requests/getProducts.js" />
       </list>
     </option>
   </component>
@@ -152,7 +179,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP XAMPP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
@@ -207,7 +234,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///Users/vanpana/Documents/Personal/Programming/MyPHPStore/client/index.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
@@ -263,6 +292,7 @@
       <workItem from="1525511385098" duration="12904000" />
       <workItem from="1525595390799" duration="15008000" />
       <workItem from="1525631248858" duration="5352000" />
+      <workItem from="1525639963799" duration="1190000" />
     </task>
     <servers />
   </component>
@@ -284,20 +314,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39582000" />
+    <option name="totallyTimeSpent" value="40772000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32976654" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32900944" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32976654" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32976654" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229167" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32900944" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18194444" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -305,11 +335,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +354,21 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="n#!!block;n#showCart#0" />
+            <element signature="n#!!block;n#addToCart#0" />
+            <element signature="n#!!block;n#deleteFromCart#0" />
+            <element signature="n#!!block;n#changeActive#0" />
+            <element signature="n#!!block;n#setCookie#0" />
+            <element signature="n#!!block;n#getCookie#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -378,7 +423,10 @@
         <state relative-caret-position="360">
           <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
           <folding>
-            <element signature="e#88#471#0" />
+            <element signature="n#!!block;n#showCart#0" />
+            <element signature="n#!!block;n#addToCart#0" />
+            <element signature="n#!!block;n#deleteFromCart#0" />
+            <element signature="n#!!block;n#changeActive#0" />
             <element signature="n#!!block;n#setCookie#0" />
             <element signature="n#!!block;n#getCookie#0" />
           </folding>
@@ -443,7 +491,10 @@
         <state relative-caret-position="105">
           <caret line="7" column="66" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="69" />
           <folding>
-            <element signature="e#88#471#0" />
+            <element signature="n#!!block;n#showCart#0" />
+            <element signature="n#!!block;n#addToCart#0" />
+            <element signature="n#!!block;n#deleteFromCart#0" />
+            <element signature="n#!!block;n#changeActive#0" />
             <element signature="n#!!block;n#setCookie#0" />
             <element signature="n#!!block;n#getCookie#0" />
           </folding>
@@ -539,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/Util/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="111" selection-start-line="14" selection-start-column="111" selection-end-line="14" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/Templates/item/double_items_template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -560,13 +604,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_ajax.googleapis.com_ajax_libs_jquery_2.1.3_jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="7473" selection-start-line="7473" selection-end-line="7473" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_ajax.googleapis.com_ajax_libs_jquery_2.1.3_jquery.js" />
     <entry file="file://$PROJECT_DIR$/server/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -628,17 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/Repository/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="56" column="48" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-          <folding>
-            <element signature="n#getAllProducts#0;n#Repository#0;n#!!top" />
-            <element signature="n#getProduct#0;n#Repository#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/Endpoints/getAllProducts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -676,34 +703,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/Templates/Drawer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="510">
           <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="e#88#471#0" />
-            <element signature="n#!!block;n#setCookie#0" />
-            <element signature="n#!!block;n#getCookie#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/Templates/drawDoubleProducts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Repository/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+          <folding>
+            <element signature="n#getAllProducts#0;n#Repository#0;n#!!top" />
+            <element signature="n#getProduct#0;n#Repository#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Util/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/Requests/getProducts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!block;n#showCart#0" />
+            <element signature="n#!!block;n#addToCart#0" />
+            <element signature="n#!!block;n#deleteFromCart#0" />
+            <element signature="n#!!block;n#changeActive#0" />
+            <element signature="n#!!block;n#setCookie#0" />
+            <element signature="n#!!block;n#getCookie#0" />
+          </folding>
         </state>
       </provider>
     </entry>
